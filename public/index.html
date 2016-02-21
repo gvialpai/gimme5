@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="gimmefive">
+<head>
+  <title></title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+
+  <script type="text/javascript" src="./javascript/controllers/mainController.js"></script>
+
+</head>
+<body>
+<h1>GIMME 5</h1>
+<div ng-controller="MainController">
+  <a href="https://api.instagram.com/oauth/authorize/?client_id=8a67c3b89c51484ea8f6ac75de2bdc01
+  &redirect_uri=http://localhost:3000/&response_type=token">LOL</a>
+
+  <a href="https://api.instagram.com/oauth/authorize/?client_id=8a67c3b89c51484ea8f6ac75de2bdc01
+  &redirect_uri=http://localhost:3000/&response_type=token&scope=public_content">LOLPublic</a>
+  <div id="instagram_data">
+    {{instagramdata}}
+  </div>
+</div>
+</body>
+</html>
